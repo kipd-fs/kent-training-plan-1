@@ -29,14 +29,14 @@ public class DeliveryFeeCalculator
         decimal surchargePct = 0m;
         if (now.DayOfWeek == DayOfWeek.Saturday || now.DayOfWeek == DayOfWeek.Sunday)
         {
-            surchargePct += rule.WeekendSurchargePct;
+            surchargePct = Math.Max(surchargePct, rule.WeekendSurchargePct);
         }
 
         if (rule.AfterHoursStartHour < rule.AfterHoursEndHour
             ? now.Hour >= rule.AfterHoursStartHour && now.Hour < rule.AfterHoursEndHour
             : now.Hour >= rule.AfterHoursStartHour || now.Hour < rule.AfterHoursEndHour)
         {
-            surchargePct += rule.AfterHoursSurchargePct;
+            surchargePct = Math.Max(surchargePct, rule.AfterHoursSurchargePct);
         }
 
         var surcharge = subtotal * surchargePct / 100m;
