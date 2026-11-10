@@ -57,7 +57,7 @@ public class DeliveryFeeCalculator
         }
 
         return new FeeQuote(
-            rule.BaseFee,
+            Math.Round(rule.BaseFee, 2, MidpointRounding.AwayFromZero),
             Math.Round(weightCharge, 2, MidpointRounding.AwayFromZero),
             Math.Round(surcharge, 2, MidpointRounding.AwayFromZero),
             Math.Round(discount, 2, MidpointRounding.AwayFromZero),
