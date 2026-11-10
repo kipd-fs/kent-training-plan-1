@@ -32,7 +32,9 @@ public class DeliveryFeeCalculator
             surchargePct += rule.WeekendSurchargePct;
         }
 
-        if (now.Hour >= rule.AfterHoursStartHour && now.Hour < rule.AfterHoursEndHour)
+        if (rule.AfterHoursStartHour < rule.AfterHoursEndHour
+            ? now.Hour >= rule.AfterHoursStartHour && now.Hour < rule.AfterHoursEndHour
+            : now.Hour >= rule.AfterHoursStartHour || now.Hour < rule.AfterHoursEndHour)
         {
             surchargePct += rule.AfterHoursSurchargePct;
         }
