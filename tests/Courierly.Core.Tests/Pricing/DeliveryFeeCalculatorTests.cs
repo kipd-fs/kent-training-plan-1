@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Courierly.Core.Domain;
 using Courierly.Core.Pricing;
 
@@ -13,7 +10,11 @@ public class DeliveryFeeCalculatorTests
 
     public DeliveryFeeCalculatorTests()
     {
-        _deliveryFeeCalculator = new DeliveryFeeCalculator();
+        _deliveryFeeCalculator = new DeliveryFeeCalculator(
+            TimeProvider.System,
+            TimeZoneInfo.FindSystemTimeZoneById("Asia/Manila")
+        );
+
         _feeRule = new FeeRule();
     }
 

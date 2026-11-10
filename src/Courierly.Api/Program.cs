@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<CourierlyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Courierly")));
+builder.Services.AddSingleton<TimeProvider>(TimeProvider.System);
 builder.Services.AddScoped<DeliveryFeeCalculator>();
 
 var app = builder.Build();

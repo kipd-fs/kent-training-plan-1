@@ -4,7 +4,15 @@ namespace Courierly.Core.Pricing;
 
 public class DeliveryFeeCalculator
 {
+    private readonly TimeProvider _timeProvider;
+    private readonly TimeZoneInfo _timeZone;
     private const decimal MaxWeightKg = 50m;
+
+    public DeliveryFeeCalculator(TimeProvider timeProvider, TimeZoneInfo timeZone)
+    {
+        _timeProvider = timeProvider;
+        _timeZone = timeZone;
+    }
 
     public FeeQuote Calculate(FeeRule rule, decimal weightKg, string? promoCode)
     {
@@ -13,7 +21,7 @@ public class DeliveryFeeCalculator
             throw new ArgumentOutOfRangeException(nameof(weightKg), weightKg, "Weight must be greater than 0 and at most 50 kg.");
         }
 
-        var now = DateTime.Now;
+        var now = TimeZoneInfo.ConvertTime(_timeProvider.GetUtcNow(), _timeZone);
 
         var weightCharge = rule.PerKgFee * (int)weightKg;
         var subtotal = rule.BaseFee + weightCharge;

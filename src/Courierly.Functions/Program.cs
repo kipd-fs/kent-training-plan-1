@@ -14,6 +14,7 @@ var host = new HostBuilder()
             options.UseSqlServer(context.Configuration.GetConnectionString("Courierly")
                 ?? context.Configuration["ConnectionStrings:Courierly"]));
         services.AddScoped<ShipmentStatusHandler>();
+        services.AddSingleton<TimeProvider>(TimeProvider.System);
     })
     .Build();
 
