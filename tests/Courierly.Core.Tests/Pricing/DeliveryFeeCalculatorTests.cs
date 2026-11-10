@@ -1,5 +1,6 @@
 using Courierly.Core.Domain;
 using Courierly.Core.Pricing;
+using Microsoft.Extensions.Time.Testing;
 
 namespace Courierly.Core.Tests.Pricing;
 
@@ -18,6 +19,7 @@ public class DeliveryFeeCalculatorTests
         _feeRule = new FeeRule();
     }
 
+    #region Validation
     [Theory]
     [InlineData(-0.5)]
     [InlineData(50.5)]
@@ -36,7 +38,9 @@ public class DeliveryFeeCalculatorTests
     {
         _deliveryFeeCalculator.Calculate(_feeRule, weightKg, promoCode: null);
     }
+    #endregion
 
+    #region Base Charge
     [Theory]
     [InlineData(0.3, 20)]
     [InlineData(1.0, 20)]
@@ -77,7 +81,108 @@ public class DeliveryFeeCalculatorTests
 
         Assert.Equal(expectedBaseCharge, actualBaseCharge);
     }
+    #endregion
 
+    #region Weekend Surcharge
+    [Theory]
+    [InlineData(2026, 11, 6, 23, 0, 0)]
+    [InlineData(2026, 11, 7, 0, 0, 12)]
+    [InlineData(2026, 11, 7, 12, 0, 12)]
+    [InlineData(2026, 11, 8, 23, 59, 12)]
+    [InlineData(2026, 11, 9, 0, 0, 0)]
+    public void Calculate_WeekendSurcharge_AppliesOnSaturdayAndSunday(int year, int month, int day, int hour, int minute, decimal expectedSurcharge)
+    {
+        // Arrange
+        _feeRule.BaseFee = 100m;
+        _feeRule.PerKgFee = 20m;
+        _feeRule.MinimumFee = 0m;
+
+        _feeRule.WeekendSurchargePct = 10m;
+        _feeRule.AfterHoursSurchargePct = 0m;
+
+        var expectedBaseCharge = _feeRule.BaseFee + _feeRule.PerKgFee;
+
+        var calculator = CreateCalculator(year, month, day, hour, minute);
+
+        // Act
+        var result = calculator.Calculate(_feeRule, 1.0m, promoCode: null);
+
+        // Assert
+        Assert.Equal(expectedSurcharge, result.Surcharge);
+        Assert.Equal(expectedBaseCharge + expectedSurcharge, result.Total);
+    }
+    #endregion
+
+    #region After-Hours Surcharge
+    [Theory]
+    [InlineData(2026, 11, 9, 19, 59, 0)]
+    [InlineData(2026, 11, 9, 20, 0, 18)]
+    [InlineData(2026, 11, 9, 23, 59, 18)]
+    [InlineData(2026, 11, 10, 0, 0, 18)]
+    [InlineData(2026, 11, 10, 5, 59, 18)]
+    [InlineData(2026, 11, 10, 6, 0, 0)]
+    [InlineData(2026, 11, 10, 12, 0, 0)]
+    public void Calculate_AfterHoursSurcharge_HandlesOvernightWindow(int year, int month, int day, int hour, int minute, decimal expectedSurcharge)
+    {
+        // Arrange
+        _feeRule.BaseFee = 100m;
+        _feeRule.PerKgFee = 20m;
+        _feeRule.MinimumFee = 0m;
+
+        _feeRule.WeekendSurchargePct = 0m;
+        _feeRule.AfterHoursSurchargePct = 15m;
+
+        _feeRule.AfterHoursStartHour = 20;
+        _feeRule.AfterHoursEndHour = 6;
+
+        var expectedBaseCharge = _feeRule.BaseFee + _feeRule.PerKgFee;
+
+        var calculator = CreateCalculator(year, month, day, hour, minute);
+
+        // Act
+        var result = calculator.Calculate(_feeRule, 1.0m, promoCode: null);
+
+        // Assert
+        Assert.Equal(expectedSurcharge, result.Surcharge);
+        Assert.Equal(expectedBaseCharge + expectedSurcharge, result.Total);
+    }
+    #endregion
+
+    #region Surcharges do not stack
+    [Theory]
+    [InlineData(10, 15, 18)]
+    [InlineData(20, 5, 24)]
+    [InlineData(10, 10, 12)]
+    [InlineData(0, 15, 18)]
+    [InlineData(15, 0, 18)]
+    public void Calculate_WeekendAndAfterHoursSurcharges_AppliesOnlyLargerPercentage(decimal weekendSurchargePct, decimal afterHoursSurchargePct, decimal expectedSurcharge)
+    {
+        // Arrange
+        _feeRule.BaseFee = 100m;
+        _feeRule.PerKgFee = 20m;
+        _feeRule.MinimumFee = 0m;
+
+        _feeRule.WeekendSurchargePct = weekendSurchargePct;
+        _feeRule.AfterHoursSurchargePct = afterHoursSurchargePct;
+
+        _feeRule.AfterHoursStartHour = 18;
+        _feeRule.AfterHoursEndHour = 23;
+
+        var expectedBaseCharge = _feeRule.BaseFee + _feeRule.PerKgFee;
+
+        // Saturday, November 7, 2026, 21:00 Philippine time
+        var calculator = CreateCalculator(2026, 11, 7, 21);
+
+        // Act
+        var result = calculator.Calculate(_feeRule, 1.0m, promoCode: null);
+
+        // Assert
+        Assert.Equal(expectedSurcharge, result.Surcharge);
+        Assert.Equal(expectedBaseCharge + expectedSurcharge, result.Total);
+    }
+    #endregion
+
+    #region Promo Discount
     [Theory]
     [InlineData(10, 12, 108)]
     [InlineData(20, 24, 96)]
@@ -102,7 +207,9 @@ public class DeliveryFeeCalculatorTests
         Assert.Equal(expectedDiscount, result.Discount);
         Assert.Equal(expectedTotal, result.Total);
     }
+    #endregion
 
+    #region Minimum Fee
     [Theory]
     [InlineData(50, 120)]
     [InlineData(120, 120)]
@@ -122,7 +229,9 @@ public class DeliveryFeeCalculatorTests
         // Assert
         Assert.Equal(expectedTotal, result.Total);
     }
+    #endregion
 
+    #region Rounding
     [Theory]
     [InlineData(50.1234, 50.12)]
     [InlineData(50.125, 50.13)]
@@ -178,4 +287,18 @@ public class DeliveryFeeCalculatorTests
         // Assert
         Assert.Equal(expectedTotal, result.Total);
     }
+    #endregion
+
+    #region Private Methods
+    private static DeliveryFeeCalculator CreateCalculator(int year, int month, int day, int hour, int minute = 0)
+    {
+        var localTime = new DateTimeOffset(year, month, day, hour, minute, 0, TimeSpan.FromHours(8));
+
+        var fakeTimeProvider = new FakeTimeProvider(localTime.ToUniversalTime());
+
+        var timeZone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Manila");
+
+        return new DeliveryFeeCalculator(fakeTimeProvider, timeZone);
+    }
+    #endregion
 }
