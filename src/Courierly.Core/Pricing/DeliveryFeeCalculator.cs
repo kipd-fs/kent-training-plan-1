@@ -23,7 +23,7 @@ public class DeliveryFeeCalculator
 
         var now = TimeZoneInfo.ConvertTime(_timeProvider.GetUtcNow(), _timeZone);
 
-        var weightCharge = rule.PerKgFee * (int)weightKg;
+        var weightCharge = rule.PerKgFee * Math.Ceiling(weightKg);
         var subtotal = rule.BaseFee + weightCharge;
 
         decimal surchargePct = 0m;
