@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1c2ed4f2-4d43-4fc2-9f40-5e030fe818f5" name="Full Scale@DESKTOP-A4KPAK2 2026-11-10 10:54:56" runUser="DESKTOP-A4KPAK2\Full Scale" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-10T10:54:56.4614150+08:00" queuing="2026-11-10T10:54:56.4614152+08:00" start="2026-11-10T10:54:55.6942566+08:00" finish="2026-11-10T10:54:56.5179966+08:00" />
+  <TestSettings name="default" id="46485124-ff37-42c2-b6ad-d0976953d7b4">
+    <Deployment runDeploymentRoot="Full_Scale_DESKTOP-A4KPAK2_2026-11-10_10_54_56" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="d122d466-aa15-4642-858a-41e5a878563f" testId="62beaac8-9509-ecc2-d094-befeb20acb1b" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.006, perKgFee: 0.006, expectedTotal: 10.01)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000111" startTime="2026-11-10T10:54:56.3887443+08:00" endTime="2026-11-10T10:54:56.3888153+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d122d466-aa15-4642-858a-41e5a878563f" />
+    <UnitTestResult executionId="9755bbe9-a113-496f-a1ee-9dbe43e6fc9b" testId="22fafed9-71fa-9544-a898-39c6f9b47f75" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 0.5)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0001533" startTime="2026-11-10T10:54:56.4223286+08:00" endTime="2026-11-10T10:54:56.4224046+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9755bbe9-a113-496f-a1ee-9dbe43e6fc9b" />
+    <UnitTestResult executionId="973fa06c-62c2-437f-bce7-2fbaf2e084bd" testId="831833d2-7da5-0243-eb96-4ef835e053b7" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.005, perKgFee: 0.005, expectedTotal: 10.01)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0004975" startTime="2026-11-10T10:54:56.3885452+08:00" endTime="2026-11-10T10:54:56.3886232+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="973fa06c-62c2-437f-bce7-2fbaf2e084bd" />
+    <UnitTestResult executionId="43a88393-c755-4d1a-9597-868da21b4088" testId="7bcb16f2-9510-6134-1600-0910115b0b2e" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.9, expectedWeightCharge: 40)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0001106" startTime="2026-11-10T10:54:56.4181979+08:00" endTime="2026-11-10T10:54:56.4182546+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43a88393-c755-4d1a-9597-868da21b4088">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 40&#xD;
+Actual:   20</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 57&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a80c201-d2f4-490d-b851-9ea16302a435" testId="78da9e07-130d-3d55-f3e0-07cfbbc8a299" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 20, expectedDiscount: 24, expectedTotal: 96)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000061" startTime="2026-11-10T10:54:56.4220459+08:00" endTime="2026-11-10T10:54:56.4221262+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a80c201-d2f4-490d-b851-9ea16302a435" />
+    <UnitTestResult executionId="1bcc63ae-9399-4a12-b430-011a1c693175" testId="bcedf716-2db5-5870-1b30-755da0b788a8" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 50, expectedWeightCharge: 1000)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000178" startTime="2026-11-10T10:54:56.4196450+08:00" endTime="2026-11-10T10:54:56.4196963+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bcc63ae-9399-4a12-b430-011a1c693175" />
+    <UnitTestResult executionId="d0e69657-c901-4f43-839e-4e0b6f0f323e" testId="669308ad-3cef-09b5-4f25-044ba25daa81" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 0, perKgFee: 20, weightKg: 1.5, expectedBaseCharge: 40)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0006077" startTime="2026-11-10T10:54:56.4237464+08:00" endTime="2026-11-10T10:54:56.4238251+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0e69657-c901-4f43-839e-4e0b6f0f323e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 40&#xD;
+Actual:   20</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 77&#xD;
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d6666c1-ea80-4d57-a7ec-112462090a38" testId="cc36d321-b43a-5985-5774-a4da41f86267" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 50, perKgFee: 20, weightKg: 1, expectedBaseCharge: 70)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000136" startTime="2026-11-10T10:54:56.4312977+08:00" endTime="2026-11-10T10:54:56.4313798+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d6666c1-ea80-4d57-a7ec-112462090a38" />
+    <UnitTestResult executionId="a6ab43f2-38c1-4dad-8cb3-60ec2ae313f4" testId="0b93696c-ce55-286a-8799-6e31a8078ade" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 50, expectedDiscount: 60, expectedTotal: 60)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000122" startTime="2026-11-10T10:54:56.4217881+08:00" endTime="2026-11-10T10:54:56.4218796+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6ab43f2-38c1-4dad-8cb3-60ec2ae313f4" />
+    <UnitTestResult executionId="913b4ce1-f0cc-4490-8897-b01000e3ad01" testId="45754a49-8608-3613-e344-6076424abac0" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.1234, expectedBaseFee: 50.12)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0003307" startTime="2026-11-10T10:54:56.4335231+08:00" endTime="2026-11-10T10:54:56.4335730+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="913b4ce1-f0cc-4490-8897-b01000e3ad01">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 50.12&#xD;
+Actual:   50.1234</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 140&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8cb72273-4979-4e69-b752-d49f23d2e42f" testId="8b0690bf-370e-8b55-335e-45e5d7e20934" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 49.9, expectedWeightCharge: 1000)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0029782" startTime="2026-11-10T10:54:56.4065196+08:00" endTime="2026-11-10T10:54:56.4104776+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cb72273-4979-4e69-b752-d49f23d2e42f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 1000&#xD;
+Actual:   980</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 57&#xD;
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45c5774c-6d7f-4d07-809a-21ec94a93dac" testId="48390eed-c501-70a1-50ad-0a3edd754f77" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.1234, expectedWeightCharge: 20.12)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000083" startTime="2026-11-10T10:54:56.3877460+08:00" endTime="2026-11-10T10:54:56.3878220+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45c5774c-6d7f-4d07-809a-21ec94a93dac" />
+    <UnitTestResult executionId="20960812-1f68-4d2d-8f44-4c004e3bbea5" testId="960474fd-586b-5f87-8803-67bbb952144f" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 50, perKgFee: 20, weightKg: 1.2, expectedBaseCharge: 90)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0001895" startTime="2026-11-10T10:54:56.4315329+08:00" endTime="2026-11-10T10:54:56.4316115+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20960812-1f68-4d2d-8f44-4c004e3bbea5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 90&#xD;
+Actual:   70</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 77&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4be5a961-128e-4815-8f30-a66d14026398" testId="be2896a1-7938-d9f0-ed87-906c47cb3c44" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 50)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0002541" startTime="2026-11-10T10:54:56.4225383+08:00" endTime="2026-11-10T10:54:56.4226139+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4be5a961-128e-4815-8f30-a66d14026398" />
+    <UnitTestResult executionId="2c18e2cb-7d0f-4669-a944-9bf857a578d3" testId="84ea64ef-8c9f-cd46-74ff-4b9e02d9dd60" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 120, expectedTotal: 120)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000105" startTime="2026-11-10T10:54:56.4234615+08:00" endTime="2026-11-10T10:54:56.4235376+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c18e2cb-7d0f-4669-a944-9bf857a578d3" />
+    <UnitTestResult executionId="91fc9b13-d5a3-4623-9c3a-9b3e90e9c8a7" testId="28a76e28-517a-8e60-11e7-24a56331dd24" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException(weightKg: -0.5)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0002753" startTime="2026-11-10T10:54:56.4327625+08:00" endTime="2026-11-10T10:54:56.4328089+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91fc9b13-d5a3-4623-9c3a-9b3e90e9c8a7" />
+    <UnitTestResult executionId="a92b6156-3983-46f0-ade6-ea4a031f2a1f" testId="7dc13f2a-0a3f-20e6-4cc6-2103f65e30c0" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 50, expectedTotal: 120)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0006041" startTime="2026-11-10T10:54:56.4232512+08:00" endTime="2026-11-10T10:54:56.4233261+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a92b6156-3983-46f0-ade6-ea4a031f2a1f" />
+    <UnitTestResult executionId="fb383330-2cfe-4936-ba3b-632e0277be5c" testId="73335a80-b73f-8fcc-d65d-89f00b84b130" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 2, expectedWeightCharge: 40)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0004391" startTime="2026-11-10T10:54:56.4172480+08:00" endTime="2026-11-10T10:54:56.4173097+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb383330-2cfe-4936-ba3b-632e0277be5c" />
+    <UnitTestResult executionId="20813872-36ee-49f3-a150-f644e2f6c1e4" testId="23f74635-4812-4307-4992-65a19533f658" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 100, expectedDiscount: 120, expectedTotal: 0)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0004084" startTime="2026-11-10T10:54:56.4199647+08:00" endTime="2026-11-10T10:54:56.4200136+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20813872-36ee-49f3-a150-f644e2f6c1e4" />
+    <UnitTestResult executionId="72fb9a4e-a19e-479c-9780-9b912d1b0fb6" testId="bf94b43d-105c-99ca-9c53-6c6edb21759e" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.004, perKgFee: 0.004, expectedTotal: 10.01)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0006200" startTime="2026-11-10T10:54:56.3883574+08:00" endTime="2026-11-10T10:54:56.3884227+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72fb9a4e-a19e-479c-9780-9b912d1b0fb6" />
+    <UnitTestResult executionId="73c85c6e-506d-4a1b-8a99-e16a47cdd6f3" testId="4dc549bd-5fb6-e44e-ff3d-f4effdfd6e38" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException(weightKg: 50.5)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0011878" startTime="2026-11-10T10:54:56.4326235+08:00" endTime="2026-11-10T10:54:56.4326752+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73c85c6e-506d-4a1b-8a99-e16a47cdd6f3" />
+    <UnitTestResult executionId="0ba57f28-1bd0-4fa3-9a02-51b674331049" testId="f2decd97-12fc-03a3-d5b1-42036c4a3ac5" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 200, expectedTotal: 200)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0003733" startTime="2026-11-10T10:54:56.4230351+08:00" endTime="2026-11-10T10:54:56.4231107+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ba57f28-1bd0-4fa3-9a02-51b674331049" />
+    <UnitTestResult executionId="fcb2019e-1bd6-4bdf-8571-4e43447cf1d5" testId="df6da6fa-70ac-7b70-a876-7f098117228c" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 1)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000078" startTime="2026-11-10T10:54:56.4227416+08:00" endTime="2026-11-10T10:54:56.4228361+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcb2019e-1bd6-4bdf-8571-4e43447cf1d5" />
+    <UnitTestResult executionId="2f23258c-10be-41b5-8dd0-e2eb64ff051d" testId="84981eb3-ad7a-f016-c7a3-80a567bcb761" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 10, expectedDiscount: 12, expectedTotal: 108)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0009435" startTime="2026-11-10T10:54:56.4198294+08:00" endTime="2026-11-10T10:54:56.4198805+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f23258c-10be-41b5-8dd0-e2eb64ff051d" />
+    <UnitTestResult executionId="80221518-76d5-49d8-8c62-3c37a2724671" testId="f8c9fc9f-480f-0c22-acde-0a3e31e71829" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.135, expectedWeightCharge: 20.14)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000023" startTime="2026-11-10T10:54:56.3881018+08:00" endTime="2026-11-10T10:54:56.3881595+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80221518-76d5-49d8-8c62-3c37a2724671" />
+    <UnitTestResult executionId="fe26738d-8d23-4deb-b416-36338efccfab" testId="b9ffac16-4daa-86de-d0bb-be58360a0e88" testName="Courierly.Core.Tests.ShipmentStatusTests.Parse_KnownStatusName_ReturnsEnumValue" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0115356" startTime="2026-11-10T10:54:56.3475384+08:00" endTime="2026-11-10T10:54:56.3759890+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe26738d-8d23-4deb-b416-36338efccfab" />
+    <UnitTestResult executionId="4f1976c3-3de2-4779-88de-6ebb0a660d28" testId="a107f229-6346-c3fa-a80e-6d1abe81b95a" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.2, expectedWeightCharge: 40)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0001441" startTime="2026-11-10T10:54:56.4174153+08:00" endTime="2026-11-10T10:54:56.4174953+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f1976c3-3de2-4779-88de-6ebb0a660d28">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 40&#xD;
+Actual:   20</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 57&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7016048f-1009-49c7-8692-a622844920b0" testId="3a9f14a8-b772-4ae7-5cd5-32e9bce16a67" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 0.3, expectedWeightCharge: 20)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000681" startTime="2026-11-10T10:54:56.4188094+08:00" endTime="2026-11-10T10:54:56.4188649+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7016048f-1009-49c7-8692-a622844920b0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 20&#xD;
+Actual:   0</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 57&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0c8a9ae6-fbf0-41cc-80e3-547f0a79b6cb" testId="7ee88d38-896c-1424-999b-cebef71ec15b" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.145, expectedWeightCharge: 20.15)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000028" startTime="2026-11-10T10:54:56.3879359+08:00" endTime="2026-11-10T10:54:56.3879948+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c8a9ae6-fbf0-41cc-80e3-547f0a79b6cb" />
+    <UnitTestResult executionId="358bfcbf-5511-4f69-9bb1-0c88fb7e5bdd" testId="57ebd439-23a8-ab84-4bff-3aaf73d33810" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.125, expectedBaseFee: 50.13)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0002901" startTime="2026-11-10T10:54:56.4329242+08:00" endTime="2026-11-10T10:54:56.4329728+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="358bfcbf-5511-4f69-9bb1-0c88fb7e5bdd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 50.13&#xD;
+Actual:   50.125</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 140&#xD;
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ee0c43c3-0022-42c0-897b-9c189d3d3718" testId="9aab4477-cc73-281c-2411-e02eebe9cabd" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.125, expectedWeightCharge: 20.13)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0004003" startTime="2026-11-10T10:54:56.3864996+08:00" endTime="2026-11-10T10:54:56.3875689+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee0c43c3-0022-42c0-897b-9c189d3d3718" />
+    <UnitTestResult executionId="dd61c222-c52c-4d6e-b874-5565459ce515" testId="fbe7395d-7cc6-a287-cd68-8601a874a88f" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.135, expectedBaseFee: 50.14)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000620" startTime="2026-11-10T10:54:56.4340860+08:00" endTime="2026-11-10T10:54:56.4341368+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd61c222-c52c-4d6e-b874-5565459ce515">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 50.14&#xD;
+Actual:   50.135</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 140&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="feee28c9-bcfb-4879-aec1-f2b2db9bf3d3" testId="98fa970f-57af-402f-8716-1bfc4ca65ff7" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 100, perKgFee: 10, weightKg: 2.3, expectedBaseCharge: 130)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0007706" startTime="2026-11-10T10:54:56.4259051+08:00" endTime="2026-11-10T10:54:56.4259996+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="feee28c9-bcfb-4879-aec1-f2b2db9bf3d3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 130&#xD;
+Actual:   120</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 77&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0f2fb045-1349-4cbf-8bb6-37c372d4203d" testId="9fbb0a06-e701-3d22-0bed-8212cfbfb7f3" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1, expectedWeightCharge: 20)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000113" startTime="2026-11-10T10:54:56.4194783+08:00" endTime="2026-11-10T10:54:56.4195338+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f2fb045-1349-4cbf-8bb6-37c372d4203d" />
+    <UnitTestResult executionId="b3afb216-fafe-452a-87e6-6c33ca5b2f73" testId="24a70668-9892-22f1-0d17-f6be7c16f811" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.999, expectedBaseFee: 51)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0000746" startTime="2026-11-10T10:54:56.4346641+08:00" endTime="2026-11-10T10:54:56.4347161+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3afb216-fafe-452a-87e6-6c33ca5b2f73">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ&#xD;
+Expected: 51&#xD;
+Actual:   50.999</Message>
+          <StackTrace>   at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee) in C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs:line 140&#xD;
+   at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6108715c-956e-41d1-9132-e7decf50282f" testId="fa0553c1-f452-3b4c-2027-f76c18c633dc" testName="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.1264, expectedWeightCharge: 20.13)" computerName="DESKTOP-A4KPAK2" duration="00:00:00.0124386" startTime="2026-11-10T10:54:56.3497651+08:00" endTime="2026-11-10T10:54:56.3692848+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6108715c-956e-41d1-9132-e7decf50282f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Courierly.Core.Tests.ShipmentStatusTests.Parse_KnownStatusName_ReturnsEnumValue" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="b9ffac16-4daa-86de-d0bb-be58360a0e88">
+      <Execution id="fe26738d-8d23-4deb-b416-36338efccfab" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.ShipmentStatusTests" name="Parse_KnownStatusName_ReturnsEnumValue" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.125, expectedBaseFee: 50.13)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="57ebd439-23a8-ab84-4bff-3aaf73d33810">
+      <Execution id="358bfcbf-5511-4f69-9bb1-0c88fb7e5bdd" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.1264, expectedWeightCharge: 20.13)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="fa0553c1-f452-3b4c-2027-f76c18c633dc">
+      <Execution id="6108715c-956e-41d1-9132-e7decf50282f" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 50, expectedWeightCharge: 1000)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="bcedf716-2db5-5870-1b30-755da0b788a8">
+      <Execution id="1bcc63ae-9399-4a12-b430-011a1c693175" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 50, expectedTotal: 120)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="7dc13f2a-0a3f-20e6-4cc6-2103f65e30c0">
+      <Execution id="a92b6156-3983-46f0-ade6-ea4a031f2a1f" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_FinalFee_NeverBelowMinimumFee" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.004, perKgFee: 0.004, expectedTotal: 10.01)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="bf94b43d-105c-99ca-9c53-6c6edb21759e">
+      <Execution id="72fb9a4e-a19e-479c-9780-9b912d1b0fb6" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_Total_RoundsOnlyAfterAllCalculations" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.999, expectedBaseFee: 51)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="24a70668-9892-22f1-0d17-f6be7c16f811">
+      <Execution id="b3afb216-fafe-452a-87e6-6c33ca5b2f73" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 49.9, expectedWeightCharge: 1000)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="8b0690bf-370e-8b55-335e-45e5d7e20934">
+      <Execution id="8cb72273-4979-4e69-b752-d49f23d2e42f" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 200, expectedTotal: 200)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="f2decd97-12fc-03a3-d5b1-42036c4a3ac5">
+      <Execution id="0ba57f28-1bd0-4fa3-9a02-51b674331049" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_FinalFee_NeverBelowMinimumFee" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.145, expectedWeightCharge: 20.15)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="7ee88d38-896c-1424-999b-cebef71ec15b">
+      <Execution id="0c8a9ae6-fbf0-41cc-80e3-547f0a79b6cb" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.1234, expectedWeightCharge: 20.12)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="48390eed-c501-70a1-50ad-0a3edd754f77">
+      <Execution id="45c5774c-6d7f-4d07-809a-21ec94a93dac" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 1)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="df6da6fa-70ac-7b70-a876-7f098117228c">
+      <Execution id="fcb2019e-1bd6-4bdf-8571-4e43447cf1d5" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 20, expectedDiscount: 24, expectedTotal: 96)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="78da9e07-130d-3d55-f3e0-07cfbbc8a299">
+      <Execution id="6a80c201-d2f4-490d-b851-9ea16302a435" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_MatchingPromoCode_AppliesDiscount" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 10, expectedDiscount: 12, expectedTotal: 108)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="84981eb3-ad7a-f016-c7a3-80a567bcb761">
+      <Execution id="2f23258c-10be-41b5-8dd0-e2eb64ff051d" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_MatchingPromoCode_AppliesDiscount" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.125, expectedWeightCharge: 20.13)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="9aab4477-cc73-281c-2411-e02eebe9cabd">
+      <Execution id="ee0c43c3-0022-42c0-897b-9c189d3d3718" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.005, perKgFee: 0.005, expectedTotal: 10.01)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="831833d2-7da5-0243-eb96-4ef835e053b7">
+      <Execution id="973fa06c-62c2-437f-bce7-2fbaf2e084bd" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_Total_RoundsOnlyAfterAllCalculations" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException(weightKg: 50.5)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="4dc549bd-5fb6-e44e-ff3d-f4effdfd6e38">
+      <Execution id="73c85c6e-506d-4a1b-8a99-e16a47cdd6f3" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1, expectedWeightCharge: 20)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="9fbb0a06-e701-3d22-0bed-8212cfbfb7f3">
+      <Execution id="0f2fb045-1349-4cbf-8bb6-37c372d4203d" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero(perKgFee: 20.135, expectedWeightCharge: 20.14)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="f8c9fc9f-480f-0c22-acde-0a3e31e71829">
+      <Execution id="80221518-76d5-49d8-8c62-3c37a2724671" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_WeightCharge_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 50, perKgFee: 20, weightKg: 1.2, expectedBaseCharge: 90)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="960474fd-586b-5f87-8803-67bbb952144f">
+      <Execution id="20960812-1f68-4d2d-8f44-4c004e3bbea5" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.9, expectedWeightCharge: 40)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="7bcb16f2-9510-6134-1600-0910115b0b2e">
+      <Execution id="43a88393-c755-4d1a-9597-868da21b4088" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 0.5)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="22fafed9-71fa-9544-a898-39c6f9b47f75">
+      <Execution id="9755bbe9-a113-496f-a1ee-9dbe43e6fc9b" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.135, expectedBaseFee: 50.14)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="fbe7395d-7cc6-a287-cd68-8601a874a88f">
+      <Execution id="dd61c222-c52c-4d6e-b874-5565459ce515" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException(weightKg: -0.5)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="28a76e28-517a-8e60-11e7-24a56331dd24">
+      <Execution id="91fc9b13-d5a3-4623-9c3a-9b3e90e9c8a7" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_OutOfAcceptedRangeWeight_ThrowsArgumentOutOfRangeException" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 100, expectedDiscount: 120, expectedTotal: 0)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="23f74635-4812-4307-4992-65a19533f658">
+      <Execution id="20813872-36ee-49f3-a150-f644e2f6c1e4" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_MatchingPromoCode_AppliesDiscount" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_FinalFee_NeverBelowMinimumFee(minimumFee: 120, expectedTotal: 120)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="84ea64ef-8c9f-cd46-74ff-4b9e02d9dd60">
+      <Execution id="2c18e2cb-7d0f-4669-a944-9bf857a578d3" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_FinalFee_NeverBelowMinimumFee" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException(weightKg: 50)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="be2896a1-7938-d9f0-ed87-906c47cb3c44">
+      <Execution id="4be5a961-128e-4815-8f30-a66d14026398" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_DoesNotThrowArgumentOutOfRangeException" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_MatchingPromoCode_AppliesDiscount(promoDiscountPct: 50, expectedDiscount: 60, expectedTotal: 60)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="0b93696c-ce55-286a-8799-6e31a8078ade">
+      <Execution id="a6ab43f2-38c1-4dad-8cb3-60ec2ae313f4" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_MatchingPromoCode_AppliesDiscount" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 0, perKgFee: 20, weightKg: 1.5, expectedBaseCharge: 40)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="669308ad-3cef-09b5-4f25-044ba25daa81">
+      <Execution id="d0e69657-c901-4f43-839e-4e0b6f0f323e" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 0.3, expectedWeightCharge: 20)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="3a9f14a8-b772-4ae7-5cd5-32e9bce16a67">
+      <Execution id="7016048f-1009-49c7-8692-a622844920b0" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 2, expectedWeightCharge: 40)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="73335a80-b73f-8fcc-d65d-89f00b84b130">
+      <Execution id="fb383330-2cfe-4936-ba3b-632e0277be5c" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.2, expectedWeightCharge: 40)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="a107f229-6346-c3fa-a80e-6d1abe81b95a">
+      <Execution id="4f1976c3-3de2-4779-88de-6ebb0a660d28" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 50, perKgFee: 20, weightKg: 1, expectedBaseCharge: 70)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="cc36d321-b43a-5985-5774-a4da41f86267">
+      <Execution id="6d6666c1-ea80-4d57-a7ec-112462090a38" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 100, perKgFee: 10, weightKg: 2.3, expectedBaseCharge: 130)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="98fa970f-57af-402f-8716-1bfc4ca65ff7">
+      <Execution id="feee28c9-bcfb-4879-aec1-f2b2db9bf3d3" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_Total_RoundsOnlyAfterAllCalculations(baseFee: 10.006, perKgFee: 0.006, expectedTotal: 10.01)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="62beaac8-9509-ecc2-d094-befeb20acb1b">
+      <Execution id="d122d466-aa15-4642-858a-41e5a878563f" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_Total_RoundsOnlyAfterAllCalculations" />
+    </UnitTest>
+    <UnitTest name="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.1234, expectedBaseFee: 50.12)" storage="c:\users\full scale\source\repos\kent-training-plan-1\tests\courierly.core.tests\bin\debug\net10.0\courierly.core.tests.dll" id="45754a49-8608-3613-e344-6076424abac0">
+      <Execution id="913b4ce1-f0cc-4490-8897-b01000e3ad01" />
+      <TestMethod codeBase="C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\bin\Debug\net10.0\Courierly.Core.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests" name="Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="62beaac8-9509-ecc2-d094-befeb20acb1b" executionId="d122d466-aa15-4642-858a-41e5a878563f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22fafed9-71fa-9544-a898-39c6f9b47f75" executionId="9755bbe9-a113-496f-a1ee-9dbe43e6fc9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="831833d2-7da5-0243-eb96-4ef835e053b7" executionId="973fa06c-62c2-437f-bce7-2fbaf2e084bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7bcb16f2-9510-6134-1600-0910115b0b2e" executionId="43a88393-c755-4d1a-9597-868da21b4088" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78da9e07-130d-3d55-f3e0-07cfbbc8a299" executionId="6a80c201-d2f4-490d-b851-9ea16302a435" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcedf716-2db5-5870-1b30-755da0b788a8" executionId="1bcc63ae-9399-4a12-b430-011a1c693175" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="669308ad-3cef-09b5-4f25-044ba25daa81" executionId="d0e69657-c901-4f43-839e-4e0b6f0f323e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc36d321-b43a-5985-5774-a4da41f86267" executionId="6d6666c1-ea80-4d57-a7ec-112462090a38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b93696c-ce55-286a-8799-6e31a8078ade" executionId="a6ab43f2-38c1-4dad-8cb3-60ec2ae313f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45754a49-8608-3613-e344-6076424abac0" executionId="913b4ce1-f0cc-4490-8897-b01000e3ad01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b0690bf-370e-8b55-335e-45e5d7e20934" executionId="8cb72273-4979-4e69-b752-d49f23d2e42f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48390eed-c501-70a1-50ad-0a3edd754f77" executionId="45c5774c-6d7f-4d07-809a-21ec94a93dac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="960474fd-586b-5f87-8803-67bbb952144f" executionId="20960812-1f68-4d2d-8f44-4c004e3bbea5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be2896a1-7938-d9f0-ed87-906c47cb3c44" executionId="4be5a961-128e-4815-8f30-a66d14026398" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84ea64ef-8c9f-cd46-74ff-4b9e02d9dd60" executionId="2c18e2cb-7d0f-4669-a944-9bf857a578d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28a76e28-517a-8e60-11e7-24a56331dd24" executionId="91fc9b13-d5a3-4623-9c3a-9b3e90e9c8a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dc13f2a-0a3f-20e6-4cc6-2103f65e30c0" executionId="a92b6156-3983-46f0-ade6-ea4a031f2a1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73335a80-b73f-8fcc-d65d-89f00b84b130" executionId="fb383330-2cfe-4936-ba3b-632e0277be5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23f74635-4812-4307-4992-65a19533f658" executionId="20813872-36ee-49f3-a150-f644e2f6c1e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf94b43d-105c-99ca-9c53-6c6edb21759e" executionId="72fb9a4e-a19e-479c-9780-9b912d1b0fb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4dc549bd-5fb6-e44e-ff3d-f4effdfd6e38" executionId="73c85c6e-506d-4a1b-8a99-e16a47cdd6f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2decd97-12fc-03a3-d5b1-42036c4a3ac5" executionId="0ba57f28-1bd0-4fa3-9a02-51b674331049" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df6da6fa-70ac-7b70-a876-7f098117228c" executionId="fcb2019e-1bd6-4bdf-8571-4e43447cf1d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84981eb3-ad7a-f016-c7a3-80a567bcb761" executionId="2f23258c-10be-41b5-8dd0-e2eb64ff051d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8c9fc9f-480f-0c22-acde-0a3e31e71829" executionId="80221518-76d5-49d8-8c62-3c37a2724671" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9ffac16-4daa-86de-d0bb-be58360a0e88" executionId="fe26738d-8d23-4deb-b416-36338efccfab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a107f229-6346-c3fa-a80e-6d1abe81b95a" executionId="4f1976c3-3de2-4779-88de-6ebb0a660d28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a9f14a8-b772-4ae7-5cd5-32e9bce16a67" executionId="7016048f-1009-49c7-8692-a622844920b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ee88d38-896c-1424-999b-cebef71ec15b" executionId="0c8a9ae6-fbf0-41cc-80e3-547f0a79b6cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57ebd439-23a8-ab84-4bff-3aaf73d33810" executionId="358bfcbf-5511-4f69-9bb1-0c88fb7e5bdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aab4477-cc73-281c-2411-e02eebe9cabd" executionId="ee0c43c3-0022-42c0-897b-9c189d3d3718" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbe7395d-7cc6-a287-cd68-8601a874a88f" executionId="dd61c222-c52c-4d6e-b874-5565459ce515" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98fa970f-57af-402f-8716-1bfc4ca65ff7" executionId="feee28c9-bcfb-4879-aec1-f2b2db9bf3d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fbb0a06-e701-3d22-0bed-8212cfbfb7f3" executionId="0f2fb045-1349-4cbf-8bb6-37c372d4203d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24a70668-9892-22f1-0d17-f6be7c16f811" executionId="b3afb216-fafe-452a-87e6-6c33ca5b2f73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa0553c1-f452-3b4c-2027-f76c18c633dc" executionId="6108715c-956e-41d1-9132-e7decf50282f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="36" executed="36" passed="25" failed="11" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.11)&#xD;
+[xUnit.net 00:00:00.10]   Discovering: Courierly.Core.Tests&#xD;
+[xUnit.net 00:00:00.18]   Discovered:  Courierly.Core.Tests&#xD;
+[xUnit.net 00:00:00.22]   Starting:    Courierly.Core.Tests&#xD;
+[xUnit.net 00:00:00.31]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.31]       Expected: 1000&#xD;
+[xUnit.net 00:00:00.31]       Actual:   980&#xD;
+[xUnit.net 00:00:00.31]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.31]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(57,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge)&#xD;
+[xUnit.net 00:00:00.31]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+[xUnit.net 00:00:00.31]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:00.31]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.31]       Expected: 40&#xD;
+[xUnit.net 00:00:00.31]       Actual:   20&#xD;
+[xUnit.net 00:00:00.31]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.31]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(57,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge)&#xD;
+[xUnit.net 00:00:00.31]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.31]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.31]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.31]       Expected: 40&#xD;
+[xUnit.net 00:00:00.31]       Actual:   20&#xD;
+[xUnit.net 00:00:00.31]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.31]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(57,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge)&#xD;
+[xUnit.net 00:00:00.31]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.31]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.31]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.31]       Expected: 20&#xD;
+[xUnit.net 00:00:00.31]       Actual:   0&#xD;
+[xUnit.net 00:00:00.31]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.31]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(57,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Decimal weightKg, Decimal expectedWeightCharge)&#xD;
+[xUnit.net 00:00:00.31]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.31]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.32]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.32]       Expected: 40&#xD;
+[xUnit.net 00:00:00.32]       Actual:   20&#xD;
+[xUnit.net 00:00:00.32]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.32]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(77,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge)&#xD;
+[xUnit.net 00:00:00.32]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+[xUnit.net 00:00:00.32]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:00.32]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.32]       Expected: 130&#xD;
+[xUnit.net 00:00:00.32]       Actual:   120&#xD;
+[xUnit.net 00:00:00.32]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.32]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(77,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge)&#xD;
+[xUnit.net 00:00:00.32]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.32]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.33]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.33]       Expected: 90&#xD;
+[xUnit.net 00:00:00.33]       Actual:   70&#xD;
+[xUnit.net 00:00:00.33]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.33]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(77,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Decimal baseFee, Decimal perKgFee, Decimal weightKg, Decimal expectedBaseCharge)&#xD;
+[xUnit.net 00:00:00.33]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.33]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.33]       Expected: 50.13&#xD;
+[xUnit.net 00:00:00.33]       Actual:   50.125&#xD;
+[xUnit.net 00:00:00.33]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.33]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(140,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:00.33]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.33]       Expected: 50.12&#xD;
+[xUnit.net 00:00:00.33]       Actual:   50.1234&#xD;
+[xUnit.net 00:00:00.33]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.33]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(140,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee)&#xD;
+[xUnit.net 00:00:00.33]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.33]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.33]       Expected: 50.14&#xD;
+[xUnit.net 00:00:00.33]       Actual:   50.135&#xD;
+[xUnit.net 00:00:00.33]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.33]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(140,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee)&#xD;
+[xUnit.net 00:00:00.33]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.33]       Assert.Equal() Failure: Values differ&#xD;
+[xUnit.net 00:00:00.33]       Expected: 51&#xD;
+[xUnit.net 00:00:00.33]       Actual:   50.999&#xD;
+[xUnit.net 00:00:00.33]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.33]         C:\Users\Full Scale\source\repos\kent-training-plan-1\tests\Courierly.Core.Tests\Pricing\DeliveryFeeCalculatorTests.cs(140,0): at Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Decimal baseFee, Decimal expectedBaseFee)&#xD;
+[xUnit.net 00:00:00.33]            at InvokeStub_DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(Object, Span`1)&#xD;
+[xUnit.net 00:00:00.33]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:00.33]   Finished:    Courierly.Core.Tests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4674319+08:00">
+        <Text>[xUnit.net 00:00:00.31]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 49.9, expectedWeightCharge: 1000) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4677239+08:00">
+        <Text>[xUnit.net 00:00:00.31]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.2, expectedWeightCharge: 40) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4681297+08:00">
+        <Text>[xUnit.net 00:00:00.31]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 1.9, expectedWeightCharge: 40) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4684814+08:00">
+        <Text>[xUnit.net 00:00:00.31]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_ChargedEveryStartedKilogram(weightKg: 0.3, expectedWeightCharge: 20) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4839593+08:00">
+        <Text>[xUnit.net 00:00:00.32]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 0, perKgFee: 20, weightKg: 1.5, expectedBaseCharge: 40) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4857753+08:00">
+        <Text>[xUnit.net 00:00:00.32]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 100, perKgFee: 10, weightKg: 2.3, expectedBaseCharge: 130) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4859782+08:00">
+        <Text>[xUnit.net 00:00:00.33]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_InAcceptedRangeWeight_AddsBaseFeeAndWeightCharge(baseFee: 50, perKgFee: 20, weightKg: 1.2, expectedBaseCharge: 90) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4864674+08:00">
+        <Text>[xUnit.net 00:00:00.33]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.125, expectedBaseFee: 50.13) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4866851+08:00">
+        <Text>[xUnit.net 00:00:00.33]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.1234, expectedBaseFee: 50.12) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4868982+08:00">
+        <Text>[xUnit.net 00:00:00.33]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.135, expectedBaseFee: 50.14) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-A4KPAK2" outcome="Error" timestamp="2026-11-10T10:54:56.4870971+08:00">
+        <Text>[xUnit.net 00:00:00.33]     Courierly.Core.Tests.Pricing.DeliveryFeeCalculatorTests.Calculate_BaseFee_RoundsToTwoDecimalPlacesAwayFromZero(baseFee: 50.999, expectedBaseFee: 51) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
